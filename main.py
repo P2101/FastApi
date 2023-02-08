@@ -13,8 +13,6 @@ class Libro(BaseModel):
     pages: int
     year: Optional[int]
 
-
-
 # El @ es un decorador para registrar la función e INDICAMOS LA RUTA, EN ESTE CASO ES LA RAIZ
 @app.get('/')
 def index():
@@ -23,7 +21,6 @@ def index():
 @app.get('/libros/{id}')
 def mostrar_libros(id: int):
     return {'data': id}
-
 
 @app.post('/libros')
 def insertar_libro(libro: Libro):
