@@ -4,7 +4,7 @@ from typing import Optional
 
 # INSTANCIAMOS LA CLASE
 app = FastAPI()
-# 'http://127.0.0.1:8000/'
+# 'http://127.0.0.1:8000/' 
 
 # BASEMODEL VALIDACION DE DATOS
 class Libro(BaseModel):
